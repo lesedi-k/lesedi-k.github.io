@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // Specify the directory where the exported files will be generated
-    distDir: 'out',
-  };
-  
-  export default nextConfig;
+  basePath: "/2048-in-react",
+  output: "export",
+  reactStrictMode: true,
+};
 
+module.exports = nextConfig;

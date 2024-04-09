@@ -13,7 +13,7 @@ export const Card: CardComponent = ({Employer, Job, Description, img}) => {
                 backgroundColor: "rgba(255, 255, 255, 0.2)",
                 flex: "0 0 25%", 
                 margin: "1% 1%" ,
-                textAlign: "left",
+                textAlign: "center",
                 maxHeight: "50vh"
             }}
         >
@@ -27,7 +27,7 @@ export const Card: CardComponent = ({Employer, Job, Description, img}) => {
                 />
             }
             
-            <h2> {Employer[0]}</h2>
+            <h2> {Employer[0]}{Employer.length > 1 && ","}</h2>
             {Employer.length > 1 && <h2> {Employer[1]} </h2>}
             <h3 style={{marginBottom: "1vh", fontWeight:500, color:""}}> {Job} </h3>
             <h3 style={{fontWeight: 300}}> {Description} </h3>
