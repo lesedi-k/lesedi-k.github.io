@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/2048-in-react",
+  basePath: "/lesedi-k",
   output: "export",
   reactStrictMode: true,
 };
 
-module.exports = nextConfig;
+export default nextConfig;
