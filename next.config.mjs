@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/lesedi-k",
+  basePath: '/github-pages',
   output: "export",
   reactStrictMode: true,
 };
