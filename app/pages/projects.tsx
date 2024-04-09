@@ -1,3 +1,4 @@
+'use client'
 import styles from "../page.module.css"
 import { Card } from "../components/cards";
 import { CardProps } from "../components/cards/types"

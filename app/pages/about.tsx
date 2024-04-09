@@ -1,3 +1,4 @@
+'use client'
 import styles from "../page.module.css"
 import Image from 'next/image'
 import { Bubble } from "../components/bubbles";
@@ -17,7 +18,7 @@ export default function About() {
         "Figma",
         "UI/UX Design",
         "Java", "Python", "JavaScript", "TypeScript", "HTML", "CSS", "C, C++ & C#", "Kotlin",
-        "OCaml", "UPPAAL"
+        "Next.js", "Node.js", "OCaml", "UPPAAL", 
 ]
 
     return (

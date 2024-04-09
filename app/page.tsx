@@ -10,7 +10,6 @@ import Projects from './pages/projects';
 import Education from './pages/education';
 import { dir } from 'console';
 
-
 export default function Home() {
   const [listenerDisabled, setListenerDisabled] = useState(false)
   const [selected, setSelected] = useState("About");
@@ -137,17 +136,19 @@ export default function Home() {
     }
   }
 
-  let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  window.addEventListener('scroll', () => {
+  if (typeof window !== 'undefined') {
+    let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    window.addEventListener('scroll', () => {
 
-      const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (currentScrollTop > lastScrollTop) {
-        onScroll("down");
-      } else {
-        onScroll("up");
-      }
-      lastScrollTop = currentScrollTop;
-  });
+        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (currentScrollTop > lastScrollTop) {
+          onScroll("down");
+        } else {
+          onScroll("up");
+        }
+        lastScrollTop = currentScrollTop;
+    });
+  }
 
   useEffect(() => {
     setSections(document.querySelectorAll('section'));
